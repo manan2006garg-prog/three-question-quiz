@@ -1,0 +1,2 @@
+#include <stdio.h>
+int main(void){const char *q[]={"C source files commonly end in .c? (1=yes, 0=no): ","An array index starts at 0 in C? (1=yes, 0=no): ","printf is declared in stdio.h? (1=yes, 0=no): "};int answer,key[]={1,1,1},score=0;for(int i=0;i<3;i++){printf("%s",q[i]);if(scanf("%d",&answer)!=1||(answer!=0&&answer!=1))return 1;if(answer==key[i])score++;}printf("Score: %d/3\n",score);return 0;}
